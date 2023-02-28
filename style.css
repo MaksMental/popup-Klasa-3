@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+	--primary-color: #3a4052;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-margin-top: 1;
+	scroll-behavior: smooth;
+    cursor: url(daniel2.png),auto;
+}
+@font-face{
+	font-family: Mortina;
+	src: url(Mortina\ DEMO.otf);
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.stronaGlowna {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.film {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.film video {
+	min-width: 100%;
+	min-height: 100%;
+  	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.film:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+}
+
+.zjazd{
+	z-index: 2;
+}
+
+.klikNizej {
+	display: inline-block;
+	padding: 2vh 5vw;
+	background-color: #F5C6AA;
+	color: #FDF6F0;
+	border-radius: 5px;
+	border: solid #FCD8D4 1px;
+	opacity: 0.6;
+}
+
+.klikNizej:hover {
+	transform: scale(0.98);
+}
+#logo{
+	position: absolute;
+	left: 50vw;
+	bottom: 70vh;
+	transform: translate(-50%, -50%);
+	animation: logo 3s linear;
+}
+@keyframes logo{
+	0%{
+		bottom: -10vh;
+	}
+	20%{
+		bottom: 10vh;
+	}
+	40%
+	{	
+		bottom: 30vh;
+	}
+	60%{
+		bottom: 50vh;
+	}
+	100%{
+		bottom: 70vh;
+	}
+}
+#logo h1{
+	text-transform: uppercase;
+	font-size: 8vw;
+	font-family: Mortina;
+	color: rgba(255,255,255,0.3);
+	background-image: url(kolorpiwa.jpg);
+	background-repeat: repeat-x;
+	-webkit-background-clip: text;
+	animation: piwo 8s linear;
+}
+@keyframes piwo{
+	0%{
+		background-position: left 0px top 190px;
+	}
+	40%{
+		background-position: left 800px top -20px;
+	}
+	80%
+	{	background-position: left 1800px top -20px;
+	}
+	100%{
+		background-position: left 2400px top 0px;
+	}
+}
+::-webkit-scrollbar{
+	width: 0;
+}
+#progressbar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	border-radius: 8px;
+	background: linear-gradient(to top, #FFFFCC ,#FFCC66, #CC9933 );
+	z-index: 9999;
+}
+section2{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #FDF6F0;
+    border-bottom: 1px solid black;
+}
+section2:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50vh;
+    font-size: 15vh;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.1);
+    color: transparent;
+}
+.slider{
+position: relative;
+width: 100%;
+display: flex;
+justify-content: flex-end;
+z-index: 10;
+
+}
+
+.slider:before{
+content: '';
+position: absolute;
+bottom: 40px;
+left: 0;
+width: 100%;
+height: 220px;
+background: #F8E2CF;
+box-sizing: border-box;
+
+}
+
+.slider img{
+    min-width: 150px;
+    position: absolute;
+    bottom: 0;
+    min-height: 100%;
+    max-height:50px;
+}
+
+.swiper-container {
+    position: relative;
+    padding: 55%;
+    width: 100%;
+    padding-top: 20%;
+    padding-bottom: 5%;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 30vh;
+    height: 50vh;
+    border-radius: 100px;
+    filter: blur(3px);
+    
+  }
+
+
+  .swiper-slide-active {
+    background-position: center;
+    background-size: cover;
+    width: 30vh;
+    height: 50vh;
+    filter: blur(0px);
+
+  }
+#blur.active{
+filter: blur(20px);
+pointer-events: none;
+user-select: none;
+}
+#popup1,#popup2,#popup3,#popup4,#popup5,#popup6,#popup7,#popup8,#popup9,#popup10,#popup11,#popup12,#popup13,#popup14,#popup15,#popup16,#popup17,#popup18,#popup19, #popup20{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: #FDF6F0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+#popup1.active,#popup2.active,#popup3.active,#popup4.active,#popup5.active,#popup6.active,#popup7.active,#popup8.active,#popup9.active,#popup10.active,#popup11.active,#popup12.active,#popup13.active,#popup14.active,#popup15.active,#popup16.active,#popup17.active,#popup18.active,#popup19.active,#popup20.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --button-bg: #F5C6AA;
+    --text-color: #fff;
+}
+
+.button{
+    font-size: 20px;
+    padding: 10px 20px;
+    background: var(--button-bg);
+    color: var(--text-color);
+    border-radius: 4px;
+    border: none;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    left: 100px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    cursor: url(butla.png),auto;
+}
+
+.button:after, 
+.button::before{
+    position: absolute;
+    content: '';
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+}
+
+.button:before{
+    display: none;
+    top: -75%;
+    background-image: 
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+
+.button:after{
+    display: none;
+    bottom: -75%;
+    background-image: 
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, var(--button-bg) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--button-bg) 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+
+.button:active{
+    transform: scale(0.9);
+    background: darken(var(--button-bg), 5%);
+    box-shadow: 0 2px 25px rgba(51,255,255,0.2);
+}
+
+.button.active:before{
+    display: block;
+    animation: topBubbles ease-in-out 0.75s;
+}
+.button.active:after{
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s;
+}
+
+@keyframes topBubbles{
+    0%{
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+    }
+    50%{
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+    }
+    100%{
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+
+@keyframes bottomBubbles{
+    0%{
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+    }
+    50%{
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+    }
+    100%{
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 105% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+    }
+}
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color: #FDF6F0;
+    color: black;
+    padding: 30px 0 10px;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding:10px;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.col h3{
+    width:fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid black;
+    margin:20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    list-style: none;
+    color: black;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content : space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+    
+}
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: black;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: url(butla.png),auto;
+}
+form button .fas{
+    font-size: 16px;
+    color: black;
+}
+.social .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    text-align: center;
+    line-height: 40px;
+    font-size:20px;
+    color: #FDF6F0;
+    background-color:#FCD8D4;
+    margin-right: 10px;
+    cursor: url(butla.png),auto;	
+}  
+@media screen and (max-width: 600px) {
+    #popup1,#popup2,#popup3,#popup4,#popup5,#popup6,#popup7,#popup8,#popup9,#popup10,#popup11,#popup12,#popup13,#popup14,#popup15,#popup16,#popup17,#popup18,#popup19, #popup20{
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        padding: 50px;
+        box-shadow: 0 5px 30px rgba(0,0,0,.30);
+        background: #FDF6F0;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .button{
+        font-size: 20px;
+        padding: 10px 20px;
+        background: var(--button-bg);
+        color: var(--text-color);
+        border-radius: 2px;
+        border: none;
+        position: relative;
+        transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+        left: 30px;
+        font-family: sans-serif;
+        margin-top: 10px;
+        cursor: url(butla.png),auto;
+    }
+  }

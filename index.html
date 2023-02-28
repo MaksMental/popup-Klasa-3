@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlcWorld</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f9444d8ed4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script6.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <section class="stronaGlowna">
+                <div class="film">
+                    <video src="Wideo_1.mov" autoplay muted loop></video>
+                </div>
+                <div class="zjazd">
+                    <a href="#site2" class="klikNizej">Wybór alkoholi</a>
+                </div>
+            </section>
+            <div id="site2">
+                <section2>
+                    <div class="slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\bulleit.png" onclick="klikBourbon()"
+                                        onmouseover="this.src='bulleit_tyl.png'" onmouseout="this.src='bulleit.png'">
+                                </div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\carlo_rossi.png"
+                                        onclick="klikBourbon2()" onmouseover="this.src='carlo_rossi_tyl.png'"
+                                        onmouseout="this.src='carlo_rossi.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\casillero.png"
+                                        onclick="klikBourbon3()" onmouseover="this.src='casillero_diablo.png'"
+                                        onmouseout="this.src='casillero.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\chivas_regal.png"
+                                        onclick="klikBourbon4()" onmouseover="this.src='chivas_tyl.png'"
+                                        onmouseout="this.src='chivas_regal.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\dwor_polski.png"
+                                        onclick="klikBourbon5()" onmouseover="this.src='dwor_polski_tyl.png'"
+                                        onmouseout="this.src='dwor_polski.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\jack_daniels.png"
+                                        onclick="klikBourbon6()" onmouseover="this.src='jack_danniels_tyl.png'"
+                                        onmouseout="this.src='jack_daniels.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\beverbach.png"
+                                        onclick="klikBourbon7()" onmouseover="this.src='baverbach_tyl.png'"
+                                        onmouseout="this.src='beverbach.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\eierlikor.png"
+                                        onclick="klikBourbon8()" onmouseover="this.src='eierlikor_tyl.png'"
+                                        onmouseout="this.src='eierlikor.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\green_label.png"
+                                        onclick="klikBourbon9()" onmouseover="this.src='green_label_tyl.png'"
+                                        onmouseout="this.src='green_label.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\johnnie_walker.png"
+                                        onclick="klikBourbon10()"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\new_land.png"
+                                        onclick="klikBourbon11()" onmouseover="this.src='new_land_tyl.png'"
+                                        onmouseout="this.src='new_land.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\old_scotland.png"
+                                        onclick="klikBourbon12()" onmouseover="this.src='old_scotland_tyl.png'"
+                                        onmouseout="this.src='old_scotland.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\pirosmani.png"
+                                        onclick="klikBourbon13()" onmouseover="this.src='pirosmani_tyl.png'"
+                                        onmouseout="this.src='pirosmani.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\red_label.png"
+                                        onclick="klikBourbon14()" onmouseover="this.src='red_label_tyl.png'"
+                                        onmouseout="this.src='red_label.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\sheridan.png"
+                                        onclick="klikBourbon15()"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\the_glenlivet.png"
+                                        onclick="klikBourbon16()" onmouseover="this.src='glenlivet_tyl.png'"
+                                        onmouseout="this.src='the_glenlivet.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\tullamore.png"
+                                        onclick="klikBourbon17()"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\wisniewski.png"
+                                        onclick="klikBourbon18()" onmouseover="this.src='wisniewski_tyl.png'"
+                                        onmouseout="this.src='wisniewski.png'"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\zeppis.png"
+                                        onclick="klikBourbon19()"></div>
+                                <div class="swiper-slide"><img src="zdjecia\wyciete\double_black.png"
+                                        onclick="klikBourbon20()" onmouseover="this.src='double_black_tyl.png'"
+                                        onmouseout="this.src='double_black.png'"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section2>
+            </div>
+            <footer>
+                <div class="row">
+                    <div class="col ">
+                        <img src="whiskey.png" class="logo">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <div class="col">
+                        <h3>Biuro</h3>
+                        <p>Polska</p>
+                        <p>84-200</p>
+                        <p>Wejherowo</p>
+                        <p class="email-id">email@gmail.com</p>
+                        <h4>+48999999999</h4>
+                    </div>
+                    <div class="col">
+                        <h3>Odnośniki</h3>
+                        <ul>
+                            <li><a href="">Głowna</a></li>
+                            <li><a href="">Serwis</a></li>
+                            <li><a href="">O nas</a></li>
+                            <li><a href="">Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Newsletter</h3>
+                        <form>
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="emial" placeholder=" Podaj maila" required>
+                        </form>
+        
+        
+                        <div class="social">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-pinterest"></i>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div id="progressbar"></div>
+        </div>
+    </div>
+    <div id="popup1">
+        <h3>Bulleit Bourbon Frontier Whiskey – wytrawny bourbon.</h3>
+        <p><br><b>Pojemność butelki: </b>0.7</p>
+        <p><b>Kraj: </b>USA</p>
+        <p><b>ABV: </b>45%</p>
+        <p><b>Rodzaj alkoholu: </b>Bourbon Whiskey</p><br>
+        <p><b>Skład: </b><br>-68% kukurydzy<br>-28% żyta<br>-4% słodu jęczmiennego</p>
+
+        <button class="button" onclick="klikBourbon()">Zamknij</button>
+        <button class="button" onclick="przepis1()">Przepis na drink!</button>
+    </div>
+    <div id="popup2">
+        <h3>Carlo Rossi California Rose – półwytrawne wino.</h3>
+        <p><br><b>Pojemność butelki: </b>Od 0,7 do 1.5 litra</p>
+        <p><b>Kraj: </b>Kalifornia</p>
+        <p><b>ABV: </b>8,5%</p>
+        <p><b>Rodzaj alkoholu: </b>Różowe półwytrawne</p><br>
+        <p>Lekkie kalifornijskie wino różowe, o orzeźwiającym półwytrawnym smaku, który zawdzięcza dojrzewaniu w
+            kalifornijskim słońcu. Podawać do deserów, owoców, lub jako aperitif w temperaturze 10-12 stopni. </p>
+
+        <button class="button" onclick="klikBourbon2()">Zamknij</button>
+        <button class="button" onclick="przepis2()">Przepis na drink!</button>
+    </div>
+    <div id="popup3">
+        <h3>Casillero del Diablo Chardonnay - wytrawne wino.</h3>
+        <p><br><b>Pojemność butelki: </b>0.75</p>
+        <p><b>Kraj: </b>Chile</p>
+        <p><b>ABV: </b>13.5%</p>
+        <p><b>Rodzaj alkoholu: </b>Białe wytrawne</p><br>
+        <p>Świeże o wyważonej kwasowości; delikatnych, eleganckich i słodkich nutach beczki. Lekko maślane z wyraźnymi
+            cytrusowymi aromatami. Idealne do delikatnych ryb (okoń, sola, łosoś).</p>
+
+        <button class="button" onclick="klikBourbon3()">Zamknij</button>
+        <button class="button" onclick="przepis3()">Przepis na drink!</button>
+    </div>
+    <div id="popup4">
+        <h3>Chivas Regal Extra 13 letni Oloroso sherry - Scotch Whiskey</h3>
+        <p><br><b>Pojemność butelki: </b>0.7</p>
+        <p><b>Kraj: </b>Szkocja</p>
+        <p><b>ABV: </b>40%</p>
+        <p><b>Rodzaj alkoholu: </b>Szkocka Whiskey</p><br>
+        <p>Chivas Regal Extra to nowy członek znanej na całym świecie marki. Stworzony dla osób szukających głębokiego,
+            słodkiego smaku o owocowym charakterze. Extra powstał z mieszanki rzadkich gatunków whisky single malt
+            starzonych w beczkach po hiszpańskim sherry Oloroso (około 10 lat).</p>
+
+        <button class="button" onclick="klikBourbon4()">Zamknij</button>
+        <button class="button" onclick="przepis4()">Przepis na drink!</button>
+    </div>
+    <div id="popup5">
+        <h3>Dwór Polski - wódka</h3>
+        <p><br><b>Pojemność butelki: </b>Od 0.7 do 1 litra</p>
+        <p><b>Kraj: </b>Polska</p>
+        <p><b>ABV: </b>40%</p>
+        <p><b>Rodzaj alkoholu: </b>wódka </p><br>
+        <p>Wódka DWÓR POLSKI to nawiązanie do najlepszych tradycji polskiego gorzelnictwa oraz swoiste świadectwo
+            polskiego dziedzictwa i tożsamości. Wódka typowo polska, produkowana ze starannie dobieranych zbóż i
+            krystalicznie czystej wody. </p>
+        <button class="button" onclick="klikBourbon5()">Zamknij</button>
+        <button class="button" onclick="przepis5()">Przepis na drink!</button>
+    </div>
+    <div id="popup6">
+        <h3>Jack Daniel's Tennessee – Whiskey.</h3>
+        <p><br><b>Pojemność butelki: </b>Od 0.5 do 3 litrow</p>
+        <p><b>Kraj: </b>USA</p>
+        <p><b>ABV: </b>40%</p>
+        <p><b>Rodzaj alkoholu: </b>Tennessee Whiskey</p><br>
+        <p>Znana amerykańska whiskey produkowana od 1866 roku. Każda jej kropla jest filtrowana przez ponad 3-metrową
+            warstwę klonowego węgla drzewnego. Ten proces trwa około 10 dni i nadaje jej charakterystyczny łagodny smak,
+            który sprawia, że Jack Daniel's nie jest określany mianem bourbonu, lecz Tennessee Whiskey.</p>
+
+        <button class="button" onclick="klikBourbon6()">Zamknij</button>
+        <button class="button" onclick="przepis6()">Przepis na drink!</button>
+    </div>
+    <div id="popup7">
+        <h3>Beverbach German Single Malt - Whiskey</h3>
+        <p><br><b>Pojemność butelki: </b>0.7</p>
+        <p><b>Kraj: </b>Niemcy</p>
+        <p><b>ABV: </b>43%</p>
+        <p><b>Rodzaj alkoholu: </b>Single Malt Whiskey</p><br>
+        <p>Pierwsza ze wszystkich rozlanych whiskey wyprodukowanych przez Hardenberg Beverbach Single Malt Whisky z
+            niemieckiej destylarni Hardenberg jest wytwarzana z połączenia słodowanego jęczmienia i słodowanej pszenicy,
+            w przeciwieństwie do whisky single malt ze Szkocji. Początkowo leżakuje w beczkach po Burbonie pierwszego
+            napełnienia, a następnie trafia do beczek, w których wcześniej znajdowała się brandy. Pozwala to nabrać
+            aromatów owocowych i lekko pikantnych. </p>
+
+        <button class="button" onclick="klikBourbon7()">Zamknij</button>
+        <button class="button" onclick="przepis7()">Przepis na drink!</button>
+    </div>
+    <div id="popup8">
+        <h3>Astei Eierlikör advocaat – likier.</h3>
+        <p><br><b>Pojemność butelki: </b>0.7</p>
+        <p><b>Kraj: </b>Niemcy</p>
+        <p><b>ABV: </b>20%</p>
+        <p><b>Rodzaj alkoholu: </b>Likier ajerkoniak</p><br>
+        <p>Likier jajeczny, wielokrotnie nagradzany przez DLG, wyjątkowo kremowy. Zgodnie z własną recepturą do
+            produkcji wykorzystywane są wyłącznie wysokiej jakości składniki. </p>
+
+        <button class="button" onclick="klikBourbon8()">Zamknij</button>
+        <button class="button" onclick="przepis8()">Przepis na drink!</button>
+    </div>
+    <div id="popup9">
+        <h3>Johhnie Walker Green Label 15-letni blended malt – Whiskey.</h3>
+        <p><br><b>Pojemność butelki: </b>0.7</p>
+        <p><b>Kraj: </b>Szkocja</p>
+        <p><b>ABV: </b>43%</p>
+        <p><b>Rodzaj alkoholu: </b>Blended malt Whiskey.</p><br>
+        <p>Filarami obecnej formuty Green Label są Tlalisker, Caol lla, Linkwood i Cragganmore.</p>
+
+        <button class="button" onclick="klikBourbon9()">Zamknij</button>
+        <button class="button" onclick="przepis9()">Przepis na drink!</button>
+    </div>
+    <div id="popup10">
+        <h3>Johnnie Walker 18yo Ultimate - Blended malt Whiskey</h3>
+        <p><br><b>Pojemność butelki: </b>Od 0.2 do 0.7 litra</p>
+        <p><b>Kraj: </b>Wielka Brytania</p>
+        <p><b>ABV: </b>40%</p>
+        <p><b>Rodzaj alkoholu: </b>Blended malt Whiskey</p><br>
+        <p>Johnnie Walker 18yo Ultimate został stworzony przez Master Blendera Jima Beveridge’a. W skład whisky wchodzą
+            między innymi destylaty Cardhu, Glen Elgin, Auchroisk oraz Blair Athol. Charakteryzuje się aromatami owoców
+            cytrusowych, migdałów, wanilii z delikatną domieszką dymu. W smaku rodzynki, prażone migdały, wanilia,
+            ciemna czekolada i miód. Finisz dość długi, owocowo-dymny.</p>
+
+        <button class="button" onclick="klikBourbon10()">Zamknij</button>
+        <button class="button" onclick="przepis10()">Przepis na drink!</button>
+    </div>
+    <div id="popup11">
+        <h3>The New Land Sauvignon Blanc - wytrawne wino.</h3>
+        <p><br><b>Pojemność butelki: </b>0.75</p>
+        <p><b>Kraj: </b>Nowa Zelandia</p>
+        <p><b>ABV: </b>12%</p>
+        <p><b>Rodzaj alkoholu: </b>Białe wytrawne</p><br>
+        <p>The New Land Sauvignon Blanc to doskonale orzeźwiające i lekkie białe wino o bardzo intensywnym aromacie.
+            Jego bukiet owocowo - kwiatowy idealnie łączy się z delikatna goryczką. Zaś na podniebieniu zostawia
+            niebywale długi finisz z subtelną kwasowatością.</p>
+
+        <button class="button" onclick="klikBourbon11()">Zamknij</button>
+        <button class="button" onclick="przepis11()">Przepis na drink!</button>
+    </div>
+    <div id="popup12">
+        <h3>Old Scotland - Blended scotch Whiskey.</h3>
+        <p><br><b>Pojemność butelki: </b>0.7</p>
+        <p><b>Kraj: </b>Szkocja</p>
+        <p><b>ABV: </b>40%</p>
+        <p><b>Rodzaj alkoholu: </b>Blended scotch Whiskey</p><br>
+        <p>Old Scotland to tzw. private label (czyli marka własna), produkowana wyłącznie dla sieci dyskontowej Żabka.
+            Nie jest nam znany skład tej whisky mieszanej (blended whisky), jak również nie znamy nazw destylarni.</p>
+
+        <button class="button" onclick="klikBourbon12()">Zamknij</button>
+        <button class="button" onclick="przepis12()">Przepis na drink!</button>
+    </div>
+    <div id="popup13">
+        <h3>Wine Man Pirosmani - wino półwytrawne.</h3>
+        <p><br><b>Pojemność butelki: </b>0.75</p>
+        <p><b>Kraj: </b>Gruzja</p>
+        <p><b>ABV: </b>12%</p>
+        <p><b>Rodzaj alkoholu: </b>Białe półwytrawne</p><br>
+        <p>Wino półwytrawne o bardzo ładnej jasnosłomkowej barwie. Wyjątkowo przyjemny aromat świeżych, dojrzałych
+            gruszek, białych porzeczek i soczystych jabłek. W smaku bardzo harmonijne z przyjemną delikatna zawoalowaną
+            nutą słodyczy.</p>
+
+        <button class="button" onclick="klikBourbon13()">Zamknij</button>
+        <button class="button" onclick="przepis13()">Przepis na drink!</button>
+    </div>
+    <div id="popup14">
+        <h3>Johnnie Walker Red Label - Blended Whiskey.</h3>
+        <p><br><b>Pojemność butelki: </b>od 0.7 do 1 litra</p>
+        <p><b>Kraj: </b>Szkocja</p>
+        <p><b>ABV: </b>40%</p>
+        <p><b>Rodzaj alkoholu: </b>Blended scotch Whiskey</p><br>
+        <p>Johnnie Walker Red Label raczy przyjemnym zapachem, na który składają się aromaty miodu, jabłek i gruszki w
+            towarzystwie wanilii oraz delikatnego dymu. W smaku wyczuć można natomiast akcenty kremu waniliowego,
+            kwaśnego jabłka i karmelu, a także toffee, drewna i ciasta bakaliowego. Wszystko to zakończone jest długim,
+            pikantnym finiszem z łagodną nutą dymu.</p>
+
+        <button class="button" onclick="klikBourbon14()">Zamknij</button>
+        <button class="button" onclick="przepis14()">Przepis na drink!</button>
+    </div>
+    <div id="popup15">
+        <h3>Likier Sheridan's Coffe Layered liquier - likier</h3>
+        <p><br><b>Pojemność butelki: </b>Od 0.5 do 1 litra</p>
+        <p><b>Kraj: </b>Irlandia</p>
+        <p><b>ABV: </b>15.5%</p>
+        <p><b>Rodzaj alkoholu: </b>Likier</p><br>
+        <p>Sheridan's sprzedawany w charakterystycznych, dwuczęściowych butelkach - w mniejszej części znajduje się
+            biały likier śmietankowy, w większej - ciemny kawowy z dodatkiem irlandzkiej whiskey. Obie części są
+            połączone wspólną zakrętką, co umożliwia równoczesne nalewanie likieru jasnego i ciemnego. Przy umiejętnym i
+            delikatnym postępowaniu alkohol rozwarstwia się w naczyniu, a biały likier unosi się na powierzchni.</p>
+
+        <button class="button" onclick="klikBourbon15()">Zamknij</button>
+        <button class="button" onclick="przepis15()">Przepis na drink!</button>
+    </div>
+    <div id="popup16">
+        <h3>The Glenlivet Founder's Reserve - Whiskey</h3>
+        <p><br><b>Pojemność butelki: </b>0.7</p>
+        <p><b>Kraj: </b>Szkocja</p>
+        <p><b>ABV: </b>40%</p>
+        <p><b>Rodzaj alkoholu: </b>Single Malt Scotch Whiskey</p><br>
+        <p>The Glenlivet Founder's Reserve to gładka, owocowa i kremowa whisky, która jest doskonałą propozycją do
+            zagłębienia się w świecie single maltów. Można się nią delektować z odrobiną wody lub kostką lodu. Sprawdzi
+            się także w popularnych drinkach na bazie szkockiej.</p>
+
+        <button class="button" onclick="klikBourbon16()">Zamknij</button>
+        <button class="button" onclick="przepis16()">Przepis na drink!</button>
+    </div>
+    <div id="popup17">
+        <h3>Tullamore Dew - Blended Irish Whiskey</h3>
+        <p><br><b>Pojemność butelki: </b>od 0.2 do 1 litra.</p>
+        <p><b>Kraj: </b>Szkocja</p>
+        <p><b>ABV: </b>40%</p>
+        <p><b>Rodzaj alkoholu: </b>Blended Scotch Whiskey</p><br>
+        <p>Tullamore Dew Original to whiskey mieszana o mocy 40% alkoholu, w której skład wchodzą destylaty whiskey
+            zbożowych, słodowych oraz typu pot still – mieszanki słodu jęczmiennego i niesłodowanego jęczmienia,
+            nadające irlandzkiej whisky tak charakterystyczny aromat i smak. Jest destylowana trzykrotnie w miedzianych
+            alembikach, dzięki czemu jest delikatniejsza i bardziej przyjazna do picia.</p>
+
+        <button class="button" onclick="klikBourbon17()">Zamknij</button>
+        <button class="button" onclick="przepis17()">Przepis na drink!</button>
+    </div>
+    <div id="popup18">
+        <h3>Nalewka Wiśniewski</h3>
+        <p><br><b>Pojemność butelki: </b>0.7</p>
+        <p><b>Kraj: </b>Polska</p>
+        <p><b>ABV: </b>16%</p>
+        <p><b>Rodzaj alkoholu: </b>Nalewka Wiśniowa</p><br>
+        <p><b>Skład: </b><br>Wiśnie<br>Alkohol<br>Cukier<br>Woda</p>
+
+        <button class="button" onclick="klikBourbon18()">Zamknij</button>
+        <button class="button" onclick="przepis18()">Przepis na drink!</button>
+    </div>
+    <div id="popup19">
+        <h3>Zeppi’s Harruba - likier</h3>
+        <p><br><b>Pojemność butelki: </b>od 0.05 do 0.7 litra.</p>
+        <p><b>Kraj: </b>Malta</p>
+        <p><b>ABV: </b>21%</p>
+        <p><b>Rodzaj alkoholu: </b>Likier</p><br>
+        <p>Zeppi's Harruba to bardzo słodki likier. Smak porównywalny do czekolady. Ciężko pić go samego, lecz świetnie
+            nadaje się jako zamiennik w przepisach do ciast.</p>
+
+        <button class="button" onclick="klikBourbon19()">Zamknij</button>
+        <button class="button" onclick="przepis19()">Przepis na drink!</button>
+    </div>
+    <div id="popup20">
+        <h3>Johnnie Walker Double Black - Scotch Blended Whiskey</h3>
+        <p><br><b>Pojemność butelki: </b>0.7</p>
+        <p><b>Kraj: </b>Szkocja</p>
+        <p><b>ABV: </b>40%</p>
+        <p><b>Rodzaj alkoholu: </b>Scotch Blended Whiskey</p><br>
+        <p>Ekspresję tę można polecić każdemu miłośnikowi alkoholi wysokoprocentowych, a zwłaszcza tym, którzy
+            szczególnie upodobali sobie smaki dymne. Warto także zwrócić uwagę na bardzo estetycznie zaprojektowaną
+            butelkę w ciemnych barwach. Z pewnością będzie stanowić ona wyjątkową pozycję w każdej kolekcji.
+            Podsumowując, to warty uwagi trunek kultowej już marki, dobry na prezent.</p>
+
+        <button class="button" onclick="klikBourbon20()">Zamknij</button>
+        <button class="button" onclick="przepis20()">Przepis na drink!</button>
+    </div>
+
+    </div>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+
+            },
+            loop: true,
+        });
+    </script>
+    <div id="logo">
+        <h1>
+            <span id="a">A</span><span id="l">l</span><span id="c">c</span><span id="w">W</span><span
+                id="O">O</span><span id="r">r</span><span id="l">l</span><span id="d">d</span>
+        </h1>
+    </div>
+    </section>
+    </div>
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%"
+        }
+    </script>
+</body>
+<script>
+    let animationButton = function (e) {
+        e.target.classList.toggle('active');
+        setTimeout(function () {
+            e.target.classList.toggle('active');
+        }, 700);
+    };
+
+    let buttons = document.querySelectorAll('.button');
+
+    buttons.forEach((btn) => {
+        btn.addEventListener('click', animationButton);
+    });
+</script>
+
+</html>
